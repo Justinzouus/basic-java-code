@@ -1,0 +1,30 @@
+//Download the JDK from oracle.com
+
+//Few Commands I used to set up the environment path
+
+//check the path of the JDK
+/usr/libexec/java_home -V
+
+//touch the bath_profile(新建配置文件)
+touch .bash_profile
+
+//open the bath_profile(打开配置文件)
+open -e .bash_profile
+
+//Edit the bath_profile(编辑配置文件)
+vim .bash_profile
+
+//Delete the bath_profile(删除配置文件)--if something is already written in your bash_profile, remember to save a copy
+rm -f ~/.bash_profile
+
+//Activate the content in bath_profile(生效配置文件)
+source ~/.bash_profile
+
+//Below is how I add into the bash_profile
+#JAVA
+JAVA_HOME="the JDK path"
+PATH=$JAVA_HOME/bin:$PATH:.
+CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
+export JAVA_HOME
+export PATH
+export CLASSPATH
