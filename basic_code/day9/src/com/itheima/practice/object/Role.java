@@ -1,4 +1,4 @@
-package com.itheima.practice;
+package com.itheima.practice.object;
 
 import java.util.Random;
 

@@ -1,4 +1,6 @@
-package com.itheima.practice;
+package com.itheima.practice.test;
+
+import com.itheima.practice.object.Role;
 
 public class FightGameTest {
     public static void main(String[] args) {
